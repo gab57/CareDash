@@ -1,0 +1,185 @@
+/*stylesheet for helloworld website */
+
+body {
+background-color: lightblue;
+}
+
+h2 {
+  color: blue;
+  font-family: TrebuchetMS;
+}
+
+h3 {
+  color: black;
+  font-family: TrebuchetMS;
+  align-content: center;
+}
+
+h8 {
+  color: #28AABB;
+  font-family: TrebuchetMS;
+  font-size: 12px;
+}
+
+div1 {
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+}
+
+div2 {
+      width: 320px;
+      padding: 40px;
+      border: lightblue;
+      margin: 10px;
+      float: center;
+  }
+
+div3 {
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+}
+
+div4 {
+  padding: 10px;
+  border: lightblue;
+  margin: 30px;
+  align-content: center;
+}
+
+div6 {
+  border: Lightblue;
+}
+
+div7 {
+background-color: black;
+padding: 20px;
+margin: 10px;
+}
+
+#myButtons {
+  background-color: #28AAAB;
+  font-size: 16px;
+  font-family: TrebuchetMS;
+  font-size-adjust: auto;
+  border-radius: 5px;
+  border: none;
+  width: 90px;
+  cursor: pointer;
+  float:right;
+}
+
+#formbox {
+    border-radius: 25px;
+    padding: 20px;
+    border: 2px solid #28AAAB;
+    float: right;
+    background-color: white;
+}
+
+#inputbox{
+  width: 250px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: #99949933;
+}
+
+#sky{
+border-radius: 25px
+}
+
+#frm{
+  font-size: 14px;
+  font-family: TrebuchetMS;
+}
+
+
+/* menu buttons */
+.menuButton {
+background-color: white;
+color: darkgrey;
+padding: 16px;
+font-size: 16px;
+font-family: TrebuchetMS;
+border: none;
+cursor: pointer;
+}
+/* menu button hover function*/
+.menuButton:hover, .menuButton:focus {
+    background-color: #29AAAB;
+    color: black;
+}
+
+/* lower buttons*/
+.lowerButtons {
+  color: white;
+  padding: 5px;
+  font-size: 14px;
+  color: white;
+  font-family: TrebuchetMS;
+  border: none;
+  cursor: pointer;
+  float:left;
+}
+/* lower button hover function*/
+.lowerButtons:hover, .lowerButtons:focus {
+    color: #29AAAB;
+    border: 1px solid white;
+}
+
+/* dropdown button */
+.dropbtn {
+    background-color: white;
+    color: darkgrey;
+    padding: 16px;
+    font-size: 16px;
+    font-family: TrebuchetMS;
+    border: none;
+    cursor: pointer;
+  }
+/* dropdown button on hover */
+  .dropbtn:hover, .dropbtn:focus {
+      background-color: #29AAAA;
+      color: black
+  }
+
+/* position container*/
+  .dropdown {
+      position: inherit;
+      display: inline-block;
+
+  }
+
+/* dropdown content (hidden until click) */
+  .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+  }
+
+/* links in the dropdown menu */
+  .dropdown-content a {
+      color: black;
+      font-family: TrebuchetMS;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+
+/* show dropdown menu */
+.show {
+  display:block;
+}
+
+.container {
+  display: flex;
+}
+
+.container > div {
+  flex: 1; /*grow*/
+}

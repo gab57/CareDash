@@ -1,0 +1,118 @@
+<!Gabrielle Beaulieu
+4/28/18>
+<html>
+<head>
+  <link rel="stylesheet" href="webstyle.css" ></link>
+  <script src="foo.js"></script>
+</head>
+
+<body>
+
+<!TOP MENU BAR>
+  <div1 class="container">
+    <a media="Logo"></a>
+      <img src="logo.png" alt="CareDashLogo"
+        width="210" height="50">
+    <button onclick="dropdownFunction()" class="dropbtn">About</button>
+      <div id="dropdown" class="dropdown-content">
+          <a href="#">What We Do</a>
+          <a href="#">Our Team</a>
+          <a href="#">Careers</a>
+      </div>
+    <a class = menuButton>Find A Doctor</a>
+    <a class = menuButton> Review Your Doctor</a>
+    <a class = menuButton> Press</a>
+  </div1>
+
+
+<!FORMBOX>
+  <div2 class="container">
+    <div>
+      <img id=sky src="skyline.png" alt="Boston Skyline"
+        width="800" height="500">
+      </div>
+    <div3 id="formbox" class = "table">
+      <h2> <center> Sign Up With CareDash! </center></h2>
+        <label id='frm'for="first">First Name:</label>
+        <input id='inputbox'name="first" /> <br/> <br/>
+        <label id='frm'for="last">Last Name:</label>
+        <input id='inputbox'name="last" /> <br/> <br/>
+        <label id='frm'for="email">Email Address:</label>
+        <input id='inputbox'name="email" /> <br/> <br/>
+        <label id='frm'for="pass">Password:</label>
+        <input id='inputbox'name="pass" /> <br/> <br/>
+        <label id='frm'for="confirmPass">Confirm Password:</label>
+        <input id='inputbox'name="confirmPass" /> <br/> <br/>
+        <div6 class = 'container'>
+          <button id='myButtons'>Sign Up</button>
+          <button id='myButtons'>Log In</button>
+        </div6><br/>
+      </div3>
+    </div2>
+
+
+<!RecentNewsBlock>
+<div5>
+    <h3> <center> Breaking News! </center> </h3>
+    <center>
+  <div10 class= "container">
+    <div4>
+      <a media="pills"></a>
+        <img src="pills.png" alt="pills"
+          width="320" height="320"> <br/>
+          <br/>
+      <a class = menuButton> Read more!</a>
+      <br/>
+      </div4>
+    <div4>
+      <a media="doc"></a>
+        <img src="docgraphic.png" alt="doctor with graphic"
+          width="320" height="320"> <br/>
+          <br/>
+      <a class = menuButton>Read more!</a>
+      <br/>
+      </div4>
+    <div4>
+      <a media="mountain"></a>
+        <img src="mountain.png" alt="mountain"
+          width="320" height="320"> <br/>
+          <br/>
+      <a class = menuButton>Read more!</a>
+      <br/>
+      </div4> </center>
+  </div10>
+  <br/>
+  <br/>
+</div5>
+
+<!BottomPortion>
+  <div7 class="container">
+    <center>
+      <a class = lowerButtons>Site Map</a> <br/>
+      <a class = lowerButtons>Contact Us</a>  <br/>
+      <a class = lowerButtons>Request Information</a>  <br/> <br/> <br/>
+      <h8> © Gabrielle Beaulieu 2018 </h8>
+    </div7>
+
+  <script>
+    function dropdownFunction() {
+        document.getElementById("dropdown").classList.toggle("show");
+    }
+
+    //adapted from https://www.w3schools.com/howto/howto_js_dropdown.asp
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+</body>
+</html>
